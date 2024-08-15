@@ -362,7 +362,17 @@ article .icon {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
+    object-fit: cover;
 }
+
+
+.project-video {
+    border-radius: 2rem; /* Optional: Apply rounded corners */
+    width: 90%; /* Make the width responsive */
+    height: 90%; /* Set the desired height for all videos */
+    object-fit: cover; /* Crop the video to fill the container while maintaining its aspect ratio */
+}
+
 
 .project-title {
     margin: 1rem;
