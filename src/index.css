@@ -146,7 +146,7 @@ a:hover {
 
 /* Sections */
 
-section {
+.section {
     padding-top: 4vh;
     height: 96vh;
     margin: 0 10rem;
@@ -356,32 +356,84 @@ article .icon {
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
-}
-
-.project-img {
+    padding: 1rem;
     border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    text-align: center;
+}
+
+.project-media-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto; /* Center the media container */
+}
+
+.media-slider-media {
+    border-radius: 2rem;
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-
-.project-video {
-    border-radius: 2rem; /* Optional: Apply rounded corners */
-    width: 90%; /* Make the width responsive */
-    height: 90%; /* Set the desired height for all videos */
-    object-fit: cover; /* Crop the video to fill the container while maintaining its aspect ratio */
+.media-slider-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem; /* Add some space between media and buttons */
 }
 
+.media-slider-btn {
+    all: unset;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.media-slider-btn > * {
+    stroke: white;
+    fill: black;
+    width: 1.5rem;
+    height: 1.5rem;
+}
 
 .project-title {
-    margin: 1rem;
+    margin: 1rem 0;
     color: black;
+    font-size: 1.5rem;
 }
 
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+    margin-top: 1rem;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.details-container {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    width: 320px;
+    margin: 1rem;
+}
+
+.details-container .project-title {
+    margin-bottom: 1rem;
 }
 
 /* Contact Section */
