@@ -1,25 +1,27 @@
 import React from 'react';
-import ImageSlider from '../components/ImageSlider';
-import arrowIcon from '../assets/icons/arrow.png';
+import ImageSlider from '../ImageSlider/ImageSlider';
+import arrowIcon from '../../assets/icons/arrow.png';
 
-import sketchJS1 from '../assets/sketchJS/video1.mp4';
-import sketchJS2 from '../assets/sketchJS/video2.mp4';
-import sketchJS3 from '../assets/sketchJS/video3.mp4';
-import sketchJS4 from '../assets/sketchJS/video4.mp4';
-import sketchJS5 from '../assets/sketchJS/video5.mp4';
+import styles from './Projects.module.css';
 
-import recipe1 from '../assets/recipe app/picture1.png';
-import recipe2 from '../assets/recipe app/picture2.png';
-import recipe3 from '../assets/recipe app/picture3.png';
+import sketchJS1 from '../../assets/sketchJS/video1.mp4';
+import sketchJS2 from '../../assets/sketchJS/video2.mp4';
+import sketchJS3 from '../../assets/sketchJS/video3.mp4';
+import sketchJS4 from '../../assets/sketchJS/video4.mp4';
+import sketchJS5 from '../../assets/sketchJS/video5.mp4';
 
-import workout1 from '../assets/workout app/picture1.png';
-import workout2 from '../assets/workout app/picture2.png';
-import workout3 from '../assets/workout app/picture3.png';
-import workout4 from '../assets/workout app/picture4.png';
-import workout5 from '../assets/workout app/picture5.png';
-import workout6 from '../assets/workout app/picture6.png';
-import workout7 from '../assets/workout app/picture7.png';
-import workout8 from '../assets/workout app/picture8.png';
+import recipe1 from '../../assets/recipe app/picture1.png';
+import recipe2 from '../../assets/recipe app/picture2.png';
+import recipe3 from '../../assets/recipe app/picture3.png';
+
+import workout1 from '../../assets/workout app/picture1.png';
+import workout2 from '../../assets/workout app/picture2.png';
+import workout3 from '../../assets/workout app/picture3.png';
+import workout4 from '../../assets/workout app/picture4.png';
+import workout5 from '../../assets/workout app/picture5.png';
+import workout6 from '../../assets/workout app/picture6.png';
+import workout7 from '../../assets/workout app/picture7.png';
+import workout8 from '../../assets/workout app/picture8.png';
 
 const sketchJSVideos = [
   sketchJS1, sketchJS2, sketchJS3, sketchJS4, sketchJS5

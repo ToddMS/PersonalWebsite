@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowBigLeft, ArrowBigRight } from 'lucide-react';
-import "../index.css";
+
+import styles from './ImageSlider.module.css';
 
 type ImageSliderProps = {
   mediaUrls: string[]; 
@@ -21,27 +22,27 @@ export function ImageSlider({ mediaUrls }: ImageSliderProps) {
   const isVideo = currentMediaUrl.endsWith('.mp4');
 
   return (
-    <div className="project-media-container">
+    <div className={styles.projectMediaContainer}>
       {isVideo ? (
         <video
           src={currentMediaUrl}
           controls
           autoPlay
           loop
-          className="media-slider-media"
+          className={styles.mediaSliderMedia}
         />
       ) : (
         <img
           src={currentMediaUrl}
           alt={`Slide ${mediaIndex + 1}`}
-          className="media-slider-media"
+          className={styles.mediaSliderMedia}
         />
       )}
-      <div className="media-slider-btn-container">
-        <button onClick={showPrevMedia} className="media-slider-btn">
+      <div className={styles.mediaSliderBtnContainer}>
+        <button onClick={showPrevMedia} className={styles.mediaSliderBtn}>
           <ArrowBigLeft />
         </button>
-        <button onClick={showNextMedia} className="media-slider-btn">
+        <button onClick={showNextMedia} className={styles.mediaSliderBtn}>
           <ArrowBigRight />
         </button>
       </div>

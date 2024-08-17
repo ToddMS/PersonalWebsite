@@ -1,11 +1,13 @@
 import React from 'react';
 
+import styles from './Footer.module.css';
+
 const Footer: React.FC = () => {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <nav>
-        <div className="nav-links-container">
-          <ul className="nav-links">
+        <div className={styles.navLinksContainer}>
+          <ul className={styles.navLinks}>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -13,7 +15,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Todd Sandler. All Rights Reserved.</p>
+      <p className={styles.footerText}>Copyright &#169; 2024 Todd Sandler. All Rights Reserved.</p>
     </footer>
   );
 };

@@ -1,29 +1,31 @@
 import React from 'react';
 
+import styles from './NavBar.module.css';
+
 const Navbar: React.FC = () => {
   const toggleMenu = () => {
-    const menu = document.querySelector<HTMLDivElement>('.menu-links');
-    const icon = document.querySelector<HTMLDivElement>('.hamburger-icon');
-    if (menu) menu.classList.toggle('open');
-    if (icon) icon.classList.toggle('open');
+    const menu = document.querySelector<HTMLUListElement>(`.${styles.menuLinks}`);
+    const icon = document.querySelector<HTMLDivElement>(`.${styles.hamburgerIcon}`);
+    if (menu) menu.classList.toggle(styles.menuLinksOpen);
+    if (icon) icon.classList.toggle(styles.hamburgerIconOpen);
   };
 
   return (
     <nav>
-      <div className="logo">Todd Sandler</div>
+      <div className="logo">Todd Sandlers</div>
       <ul className="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div className="hamburger-menu">
-        <div className="hamburger-icon" onClick={toggleMenu}>
+      <div className={styles.hamburgerMenu}>
+        <div className={styles.hamburgerIcon} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
         </div>
-        <ul className="menu-links">
+        <ul className={styles.menuLinks}>
           <li><a href="#about" onClick={toggleMenu}>About</a></li>
           <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
           <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>

@@ -1,0 +1,39 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.sectionPicContainer img {
+    width: 400px;
+    height: 400px; 
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+.sectionText {
+    align-self: center;
+    text-align: center;
+}
+
+.sectionTextP1 {
+    text-align: center;
+}
+
+.sectionTextP2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.socialsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
