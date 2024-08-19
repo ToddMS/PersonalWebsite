@@ -1,11 +1,27 @@
 import React from 'react';
-
 import styles from './Experience.module.css';
+import DetailsContainer from './DetailsContainer';
 
 import checkmarkIcon from '../../assets/icons/checkmark.png';
 import arrowIcon from '../../assets/icons/arrow.png';
 
 const Experience: React.FC = () => {
+  const frontendArticles = [
+    { icon: checkmarkIcon, title: 'HTML', level: 'Experienced' },
+    { icon: checkmarkIcon, title: 'CSS', level: 'Experienced' },
+    { icon: checkmarkIcon, title: 'JavaScript', level: 'Experienced' },
+    { icon: checkmarkIcon, title: 'Angular', level: 'Experienced' },
+    { icon: checkmarkIcon, title: 'TypeScript', level: 'Experienced' },
+    { icon: checkmarkIcon, title: 'React', level: 'Experienced' },
+  ];
+
+  const backendArticles = [
+    { icon: checkmarkIcon, title: 'Java', level: 'Experienced' },
+    { icon: checkmarkIcon, title: 'Node JS', level: 'Experienced' },
+    { icon: checkmarkIcon, title: 'Micronaut', level: 'Experienced' },
+    { icon: checkmarkIcon, title: 'Spring Boot', level: 'Experienced' },
+  ];
+
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
     if (projectsSection) {
@@ -14,91 +30,13 @@ const Experience: React.FC = () => {
   };
 
   return (
-    <section id="experience" className={styles.experience}>
+    <section id='experience' className={styles.experience}>
       <p className={styles.sectionTextP1}>Explore My</p>
       <h1 className={styles.title}>Experience</h1>
       <div className={styles.experienceDetailsContainer}>
         <div className={styles.aboutContainers}>
-          <div className={styles.detailsContainer}>
-            <h2 className={styles.experienceSubTitle}>Frontend Development</h2>
-            <div className={styles.articleContainer}>
-              <article className={styles.article}>
-                <img src={checkmarkIcon} alt="Experience Icon" className={styles.articleIcon} />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article className={styles.article}>
-                <img src={checkmarkIcon} alt="Experience Icon" className={styles.articleIcon} />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article className={styles.article}>
-                <img src={checkmarkIcon} alt="Experience Icon" className={styles.articleIcon} />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article className={styles.article}>
-                <img src={checkmarkIcon} alt="Experience Icon" className={styles.articleIcon} />
-                <div>
-                  <h3>Angular</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article className={styles.article}>
-                <img src={checkmarkIcon} alt="Experience Icon" className={styles.articleIcon} />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article className={styles.article}>
-                <img src={checkmarkIcon} alt="Experience Icon" className={styles.articleIcon} />
-                <div>
-                  <h3>React</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div className={styles.detailsContainer}>
-            <h2 className={styles.experienceSubTitle}>Backend Development</h2>
-            <div className={styles.articleContainer}>
-              <article className={styles.article}>
-                <img src={checkmarkIcon} alt="Experience Icon" className={styles.articleIcon} />
-                <div>
-                  <h3>Java</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article className={styles.article}>
-                <img src={checkmarkIcon} alt="Experience Icon" className={styles.articleIcon} />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article className={styles.article}>
-                <img src={checkmarkIcon} alt="Experience Icon" className={styles.articleIcon} />
-                <div>
-                  <h3>Micronaut</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article className={styles.article}>
-                <img src={checkmarkIcon} alt="Experience Icon" className={styles.articleIcon} />
-                <div>
-                  <h3>Spring Boot</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
+          <DetailsContainer title="Frontend Development" articles={frontendArticles} />
+          <DetailsContainer title="Backend Development" articles={backendArticles} />
         </div>
       </div>
       <img src={arrowIcon} alt="Arrow icon" className={`${styles.icon} ${styles.arrow}`} onClick={scrollToProjects} />

@@ -32,3 +32,31 @@
 .emailIcon {
     height: 2.5rem;
 }
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.sectionTextP1 {
+    text-align: center;
+}
+
+.contactInfoContainer p {
+    font-size: larger;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}

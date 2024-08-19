@@ -34,3 +34,45 @@
 .articleIcon {
     cursor: default;
 }
+
+.sectionTextP1 {
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.aboutContainers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.aboutContainers, .aboutDetailsContainer {
+    display: flex;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 2rem;
+    }
+}

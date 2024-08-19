@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
           <p><a href="mailto:toddmathewsandler@gmail.com">ToddMathewSandler@gmail.com</a></p>
         </div>
         <div className={styles.contactInfoContainer}>
-          <img src={linkedInIcon} alt="LinkedIn Icon" className={styles.contactIcon} />
+          <img src={linkedInIcon} alt="LinkedIn Icon" className={`${styles.icon} ${styles.contactIcon}`} />
           <p><a href="https://www.linkedin.com/in/todd-sandler-5978a320b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
         </div>
       </div>

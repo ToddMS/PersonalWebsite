@@ -1,6 +1,6 @@
 import React from 'react';
-import ImageSlider from '../ImageSlider/ImageSlider';
 import arrowIcon from '../../assets/icons/arrow.png';
+import Project from './Project'
 
 import styles from './Projects.module.css';
 
@@ -42,44 +42,17 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <section id="projects">
-      <p className="section__text__p1">Browse My Recent</p>
-      <h1 className="title">Projects</h1>
-      <div className="experience-details-container">
-        <div className="about-containers">
-          <div className="details-container color-container">
-            <ImageSlider mediaUrls={workoutImages} />
-            <h2 className="project-title">Context-Aware Fitness Mobile App</h2>
-            <button
-              className="btn btn-color-2 project-btn"
-              onClick={() => window.open('https://github.com/ToddMS/Context-Aware-Fitness-Mobile-App', '_blank', 'noopener noreferrer')}
-            >
-              GitHub
-            </button>
-          </div>
-          <div className="details-container color-container">
-            <ImageSlider mediaUrls={sketchJSVideos} />
-            <h2 className="project-title">Sketch.JS Canvas Project</h2>
-            <button
-              className="btn btn-color-2 project-btn"
-              onClick={() => window.open('https://github.com/ToddMS/Creative-Coding', '_blank', 'noopener noreferrer')}
-            >
-              GitHub
-            </button>
-          </div>
-          <div className="details-container color-container">
-            <ImageSlider mediaUrls={recipeImages} />
-            <h2 className="project-title">Shopping List and Recipe App</h2>
-            <button
-              className="btn btn-color-2 project-btn"
-              onClick={() => window.open('https://github.com/ToddMS/Shopping-List-and-Recipe-App', '_blank', 'noopener noreferrer')}
-            >
-              GitHub
-            </button>
-          </div>
+    <section id="projects" className={styles.projects}>
+      <p className={styles.sectionTextP1}>Browse My Recent</p>
+      <h1 className={styles.title}>Projects</h1>
+      <div className={styles.experienceDetailsContainer}>
+        <div className={styles.aboutContainers}>
+          <Project name='Context-Aware Weight Training Assistant' media={workoutImages} gitHubUrl='This is a url' />
+          <Project name='Creative SketchJS Designs' media={sketchJSVideos} gitHubUrl='This is a url' />
+          <Project name='Food Shopping and Recipe web app' media={recipeImages} gitHubUrl='// https://github.com/ToddMS/Context-Aware-Fitness-Mobile-App' />
         </div>
       </div>
-      <img src={arrowIcon} alt="Arrow icon" className="icon arrow" onClick={scrollToContact} />
+      <img src={arrowIcon} alt="Arrow icon" className={`${styles.icon} ${styles.arrow}`} onClick={scrollToContact} />
     </section>
   );
 };

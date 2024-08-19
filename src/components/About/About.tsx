@@ -15,7 +15,7 @@ const About: React.FC = () => {
   };
 
   return (
-    <section id="about" className={styles.aboutSection}>
+    <section id="about"className={styles.aboutSection}>
       <p className={styles.sectionTextP1}>Get To Know More</p>
       <h1 className={styles.title}>About me</h1>
       <div className={styles.sectionContainer}>
@@ -36,7 +36,7 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className={styles.textContainer}>
-            <p>Full Stack Engineer with 2+ years of professional experience, a strong understanding of Java, Angular, TypeScript, and JavaScript following a First Class Honours BSc in Computer Science from the University of Leicester. Working at Kyloe Partners, a leading Bullhorn Data Management company.</p>
+            <p>Full Stack Engineer with 3+ years of professional experience, a strong understanding of Java, Angular, TypeScript, and JavaScript following a First Class Honours BSc in Computer Science from the University of Leicester. Working at Kyloe Partners, a leading Bullhorn Data Management company.</p>
             <br />
             <p>Outside of work, I enjoy keeping active, rowing for my local London rowing club, and maintaining a healthy but disciplined workout schedule at the gym. While also finding downtime with friends and family.</p>
           </div>
