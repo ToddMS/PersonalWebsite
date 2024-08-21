@@ -78,7 +78,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .profileSection {
+    .profile {
         display: block;
     }
 
@@ -121,7 +121,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .profileSection {
+    .profile {
         height: 83vh;
         margin-bottom: 0;
     }

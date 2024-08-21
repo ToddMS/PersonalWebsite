@@ -5,6 +5,20 @@
     height: 80vh;
 }
 
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.sectionPicContainer {
+    height: 400px;
+    width: 400px;
+    margin: auto 0 ;
+}
+
 .sectionPicContainer img {
     width: 400px;
     height: 400px; 
@@ -24,6 +38,10 @@
 .sectionTextP2 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+}
+
+.sectionText p {
+    font-weight: 600;
 }
 
 .title {
@@ -83,22 +101,22 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .profileSection {
+    .profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .profileSection {
+    .profile {
         display: block;
     }
 
-    .profileSection {
+    .profile {
         height: fit-content;
     }
 
-    .profileSection {
+    .profile {
         margin: 0 5%;
     }
 
@@ -120,7 +138,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .profileSection {
+    .profile {
         height: 83vh;
         margin-bottom: 0;
     }

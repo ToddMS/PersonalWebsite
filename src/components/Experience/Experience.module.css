@@ -62,7 +62,6 @@
 .arrow {
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
 }
 
 @media screen and (max-width: 1200px) {

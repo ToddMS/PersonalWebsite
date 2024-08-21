@@ -8,6 +8,19 @@
     text-align: center;
 }
 
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 
 .colorContainer {
     border-color: rgb(163, 163, 163);

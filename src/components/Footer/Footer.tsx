@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </nav>
-      <p className={styles.footerText}>Copyright &#169; 2024 Todd Sandler. All Rights Reserved.</p>
+      <p> Copyright &#169; 2024 Todd Sandler. All Rights Reserved.</p>
     </footer>
   );
 };

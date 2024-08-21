@@ -1,15 +1,14 @@
-.projectMediaContainer {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
+.projectMediaContainer{ 
+    overflow: hidden;
 }
-
 .mediaSliderMedia {
     border-radius: 2rem;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 300ms ease-in-out;
 }
 
 .mediaSliderBtnContainer {
@@ -36,4 +35,23 @@
     fill: black;
     width: 1.5rem;
     height: 1.5rem;
+}
+
+.mediaSliderBtn:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+.mediaSliderBtn:hover > *{
+    animation: squish 200ms ease-in-out;
+}
+.mediaSideBySide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+@keyframes squish {
+    50% {
+        scale: 1.4 0.6;
+    }
 }

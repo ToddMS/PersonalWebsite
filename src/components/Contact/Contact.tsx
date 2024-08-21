@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
       <h1 className={styles.title}>Contact Me</h1>
       <div className={styles.contactInfoUpperContainer}>
         <div className={styles.contactInfoContainer}>
-          <img src={emailIcon} alt="Email Icon" className={`${styles.contactIcon} ${styles.emailIcon}`} />
+          <img src={emailIcon} alt="Email Icon" className={`${styles.icon} ${styles.contactIcon} ${styles.emailIcon}`} />
           <p><a href="mailto:toddmathewsandler@gmail.com">ToddMathewSandler@gmail.com</a></p>
         </div>
         <div className={styles.contactInfoContainer}>

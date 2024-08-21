@@ -11,28 +11,33 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav>
-      <div className="logo">Todd Sandlers</div>
-      <ul className="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div className={styles.hamburgerMenu}>
-        <div className={styles.hamburgerIcon} onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul className={styles.menuLinks}>
-          <li><a href="#about" onClick={toggleMenu}>About</a></li>
-          <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
-          <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-          <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+    <>
+      <nav id="desktopNav" className={styles.desktopNav}>
+        <div className={styles.logo}>Todd Sandler</div>
+        <ul className={styles.navLinks}>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+      <nav id="hamburgerNav" className={styles.hamburgerNav}>
+        <div className={styles.logo}>Todd Sandler</div>
+        <div className={styles.hamburgerMenu}>
+          <div className={styles.hamburgerIcon} onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul className={styles.menuLinks}>
+            <li><a href="#about" onClick={toggleMenu}>About</a></li>
+            <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
+            <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
+            <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </>
   );
 };
 
